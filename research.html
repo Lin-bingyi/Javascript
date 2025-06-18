@@ -6,27 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>研究</title>
     <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #e0eafc 100%);
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            background: rgba(25, 25, 112, 0.9);
+            padding: 18px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .navbar a {
+            color: white;
+            background: none;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: 1px solid gold;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .navbar a:link,
+        .navbar a:visited {
+            color: #ffd700;
+        }
+
+        .navbar a:hover {
+            background: gold;
+            color: darkblue;
+            transform: translateY(-2px) scale(1.07);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
         div#myresearch {
             width: 50%;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: 0 auto;
+            background-color: #fff;
+            padding: 36px 32px 24px 32px;
+            margin: 40px auto 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #0001;
+        }
+
+        h3 {
+            color: #1a237e;
+            margin-top: 0;
+        }
+
+        ol {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            .navbar a {
+                font-size: 1em;
+                padding: 10px 0;
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            div#myresearch {
+                width: 98%;
+                padding: 18px 6px 12px 6px;
+                margin: 18px auto 0 auto;
+            }
         }
     </style>
 </head>
 
 <body>
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我</a>
-    <a href="research.html">研究</a>
-    <a href="homework.html">作業</a>
-    <a href="https://lin-bingyi.github.io/428/WaterPuzzle.html">water puzzle</a>
-    <a href="https://lin-bingyi.github.io/react-app/">react app</a>
+    <nav class="navbar">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="research.html">研究</a>
+        <a href="homework.html">作業</a>
+        <a href="https://lin-bingyi.github.io/428/WaterPuzzle.html">water puzzle</a>
+        <a href="https://lin-bingyi.github.io/react-app/">react app</a>
+    </nav>
     <div id="myresearch">
         <h3>研究主題</h3>
         <ol>
-            <li>暫無 ()</li>
-            </li>
+            <li>網路通訊協定</li>
+            <li>區塊鏈的電子投票系統設計</li>
+            <li> Apple Intelligence</li>
         </ol>
     </div>
 </body>

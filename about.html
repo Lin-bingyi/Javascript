@@ -6,48 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我的二三事</title>
     <style>
-        body{
-            background-color: lightgrey;
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #e0eafc 100%);
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
         }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            background: rgba(25, 25, 112, 0.9);
+            padding: 18px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .navbar a {
+            color: white;
+            background: none;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: 1px solid gold;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .navbar a:link,
+        .navbar a:visited {
+            color: #ffd700;
+        }
+
+        .navbar a:hover {
+            background: gold;
+            color: darkblue;
+            transform: translateY(-2px) scale(1.07);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-card {
+            background: #fff;
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #0001;
+            padding: 36px 32px 24px 32px;
+        }
+
         table {
-            border: 1px solid pink;
+            border: none;
             border-collapse: collapse;
+            width: 100%;
         }
 
         td {
-            margin: 10px;
+            padding: 10px;
+            vertical-align: top;
+            border: none;
+        }
+
+        .profile-img {
+            border-radius: 16px;
+            box-shadow: 0 2px 12px #0002;
+            width: 180px;
+        }
+
+        h3,
+        h4 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+
+        ul {
+            margin: 0 0 10px 0;
         }
     </style>
+</head>
 
 <body>
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我</a>
-    <a href="research.html">研究</a>
-    <a href="homework.html">作業</a>
-    <a href="https://lin-bingyi.github.io/428/WaterPuzzle.html">water puzzle</a>
-    <a href="https://lin-bingyi.github.io/react-app/">react app</a>
-    <h3>林秉毅</h3>
-    <table>
-        <tr>
-            <td width="300px">
+    <nav class="navbar">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="research.html">研究</a>
+        <a href="homework.html">作業</a>
+        <a href="https://lin-bingyi.github.io/428/WaterPuzzle.html">water puzzle</a>
+        <a href="https://lin-bingyi.github.io/react-app/">react app</a>
+    </nav>
+    <div class="profile-card">
+        <h3>林秉毅</h3>
+        <table>
+            <tr>
+                <td width="300px">
+                    <ul>
+                        <li>南臺科技大學 學生</li>
+                        <li>教室:D201</li>
+                        <li>學號:5B1G0025</li>
+                        <li>E-mail: 5b1g0025@stusts.edu.tw</li>
+                    </ul>
+                </td>
+                <td width="200px">
+                    <img src="img/IMG_4391.JPG" alt="林秉毅" class="profile-img" />
+                </td>
+            </tr>
+        </table>
+        <h4>學歷</h4>
+        <ul>
+            <li>南臺科技大學 在學</li>
+            <li>南臺科技大學 資訊工程系</li>
+        </ul>
+        <h4>林秉毅 履歷</h4>
+        <ul>
+            <li>姓名：林秉毅</li>
+            <li>性別：男</li>
+            <li>出生年月日:2007 年 4 月 13 日</li>
+            <li>學歷:南台科技大學 五專部 資訊工程科（在學）</li>
+            <li>專長:JavaScript、React、Node.js</li>
+            <li>語言能力：英檢初級</li>
+            <li>聯絡方式：
                 <ul>
-                    <li>南臺科技大學 學生</li>
-                    <li>教室:D201</li>
-                    <li>學號:5B1G0025</li>
-                    <li>E-mail: 5b1g0025@stusts.edu.tw</li>
-                    <li><a href="http://www.chendh.idv.tw/">個人網址</a></li>
+                    <li>電話:0900-000-000</li>
+                    <li>Email:5b1g0025@stust.edu.tw</li>
                 </ul>
-            </td>
-            <td width="200px">
-                <img src="img/chendh-1217x1536.jpg" alt="林秉毅" width="200px" />
-            </td>
-        </tr>
-    </table>
-    <h4>學歷</h4>
-    <ul>
-        <li>南臺科技大學 在學</li>
-        <Li>南臺科技大學 資訊工程系</Li>
-    </ul>
+            </li>
+            <li>自傳:我目前就讀於南台科技大學五專部資訊工程科，對資訊技術領域充滿興趣，尤其在程式設計與網站開發方面特別投入。平時有使用 Python、C、HTML/CSS/JavaScript 的經驗，也曾經透過 Flask 架設個人網頁並成功上線，熟悉基本的前後端整合流程。
+
+在校期間積極參與專題製作與實作課程，注重實作與團隊合作精神，並樂於主動學習與解決問題。個性穩重踏實，遇到困難會主動查詢資料並反覆嘗試，具備良好的自學能力與責任感。
+
+未來希望能夠累積更多實務經驗，尋找有關網站開發、資訊管理或網路應用相關的工作機會，提升自身實力並應用所學。</li>
+        </ul>
+        <h4>心得</h4>
+        <ul>
+            <li>這次期末報告，我把一整學期學到的 HTML / CSS 全都塞進「關於我的二三事」這個小網站。最先著手的是導覽列：用 flexbox 把六個連結排成等距、再加上金色邊框和 hover 時微微浮起的 transform，視覺瞬間比單純文字高級許多。背景原本只打算用單色，改成 linear-gradient 後，整個畫面有了深淺層次，也讓卡片更突出。
+
+　　Profile 卡片算是我改版最多次的區塊。為了讓文字和照片永遠同一行，我最後選擇用 table 搭配 ul 結構，並用 border-radius 和 box-shadow 做出卡片感。雖然 div 也能排版，但 table 在固定欄寬時更省事。調 margin、padding 時，我幾乎是按一次 F5 就微調一個像素，也因此終於體會到「像素眼」的樂趣與痛苦。
+
+　　我還把之前做的 Water Puzzle 和 React App 連到導覽列，當成小型作品集；整合時才驚覺自己已經學會 link/visited 顏色控制、按鈕動畫、透明 navbar 等細節。整個網頁都用純 HTML/CSS 完成，沒有一行 JavaScript，卻也能呈現出層次與互動感，這讓我更有信心。下一步想挑戰加夜間模式切換，試著把 JS 與 CSS 變數結合，讓網站更完整。</li>
+        </ul>
+    </div>
 </body>
 
 </html>
